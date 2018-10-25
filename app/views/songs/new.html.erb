@@ -12,7 +12,7 @@
 <%end%>
 
 
-<%= form_tag song_path(@song), method: "patch" do %>
+<%= form_tag song_path(@song), method: "create" do %>
   <div class="field<%= ' field_with_errors' if @song.errors[:title].any? %>">
     <%= label_tag "title", "Title" %>
     <%= text_field_tag "title", @song.title %>
