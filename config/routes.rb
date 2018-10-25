@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  get '/songs' 
+  get '/songs', to: songs#index
 end
