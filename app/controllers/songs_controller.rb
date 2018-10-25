@@ -29,6 +29,8 @@ class SongsController < ApplicationController
 	  @song.update(song_params)
 	  redirect_to song_path(@song)
 	end
+	
+	
 
 	private
 
